@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :authorize, only: [:index, :me, :show]
+#   before_action :authorize, only: [:index, :me, :show]
   before_action :set_user, only: [:show]
 
   # GET /users
