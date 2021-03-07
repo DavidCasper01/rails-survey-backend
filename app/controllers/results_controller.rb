@@ -1,5 +1,5 @@
 class ResultsController < ApplicationController
-  before_action :set_survey
+  #  before_action :set_survey
 
   def create
     @result = Result.new(result: JSON.parse(request.body.read))
