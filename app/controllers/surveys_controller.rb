@@ -1,7 +1,7 @@
 class SurveysController < ApplicationController
-  before_action :authorize, only: [:create, :update, :destroy, :index]
- before_action :set_user, only: [:create, :destroy, :index]
- before_action :set_survey, only: [:show, :update, :destroy]
+#   before_action :authorize, only: [:create, :update, :destroy, :index]
+#  before_action :set_user, only: [:create, :destroy, :index]
+#  before_action :set_survey, only: [:show, :update, :destroy]
 
   # GET /surveys
   def index
