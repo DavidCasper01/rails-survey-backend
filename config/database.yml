@@ -29,7 +29,5 @@ test:
 production:
   <<: *default
   database: rails_survey_backend_production
-  username: <%= ENV['MYAPP_DATABASE_USERNAME'] %>
-  password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
-  host: db
+  url: <%= ENV['DATABASE_URL'] %>
 
