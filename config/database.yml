@@ -15,6 +15,9 @@ development:
   <<: *default
   database: rails_survey_backend_development
   username: david
+  password: FWfd@t%6FG21Cd#^@sDbNT^*(3
+  host: db
+
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -26,5 +29,7 @@ test:
 production:
   <<: *default
   database: rails_survey_backend_production
-  username: david
+  username: <%= ENV['MYAPP_DATABASE_USERNAME'] %>
   password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
+  host: db
+
